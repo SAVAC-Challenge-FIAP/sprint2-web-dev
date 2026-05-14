@@ -48,3 +48,19 @@ cards.forEach((card) => {
     });
 
 });
+
+//lógica de download
+const btnDownload = document.getElementById("btn-download");
+
+btnDownload.addEventListener("click", () => {
+
+        const nome = prompt("Digite seu nome para baixar o app:");
+
+        if(nome) {
+            alert(`Bem-vindo(a), ${nome}! O download começará.`);
+        } else {
+            alert("Você cancelou o download.");
+        }
+
+    }
+);
