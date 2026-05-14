@@ -1,0 +1,92 @@
+.section-6 {
+    margin-top: 70px;
+    font-family: var(--font-syne);
+}
+
+.section-6 .title-flag {
+    font-family: var(--font-mono);
+}
+
+.section-6 .cards {
+    display: flex;
+    margin-top: 60px;
+    gap: 25px;
+}
+
+.section-6 .subtitle::after {
+  content:"S.A.V.A.C.";       
+  color: var(--color-second);  
+}
+
+.section-6 .card {
+    min-width: 220px;
+    min-height: 260px;
+    font-size: 20px;
+    margin-bottom: 110px;
+}
+
+.section-6 .quadrado {
+    min-height: 220px;
+    font-size: 96px;
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-6 .quadrado::after {
+    content: attr(data-number);
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    min-width: 90px;
+    min-height: 15px;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 12px;   
+    opacity: 0.7;
+}
+
+#card1 {
+    background: linear-gradient(
+    135deg,
+    rgba(255, 183, 0, 0.85),
+    rgba(180, 100, 0, 0.65)
+  );
+}
+
+#card2 {
+    background: linear-gradient(
+    135deg,
+    rgba(255, 145, 0, 0.75),
+    rgba(140, 60, 0, 0.65)
+  );
+}
+
+#card3 {
+    background: linear-gradient(
+    135deg,
+    rgba(220, 90, 20, 0.7),
+    rgba(120, 30, 10, 0.7)
+  );
+}
+
+#card4 {
+    background: linear-gradient(
+    135deg,
+    rgba(180, 40, 20, 0.7),
+    rgba(90, 10, 10, 0.8)
+  );
+}
+
+#card5 {
+    background: linear-gradient(
+    135deg,
+    rgba(180, 40, 20, 0.7),
+    rgba(90, 10, 10, 0.8)
+  );
+}

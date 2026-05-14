@@ -1,0 +1,48 @@
+.section-7 .content{
+    align-items: center;
+    margin-top: 100px;
+}
+
+.section-7 .container {
+    position: relative;
+}
+
+.section-7 .texto-grande {
+    color: var(--color-white);
+    margin-top: 40px;
+    font-size: 100px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    font-family: 'Syne';
+}
+
+.section-7 .texto-grande::after {
+  content:".";           /* O conteúdo que será adicionado */
+  color: #8D1514;             /* A cor específica para o ponto */
+}
+
+
+/* Não preciso colocar novamente as configurações do btn-vermelho, pois ele já vai usar. Neste caso, coloco a alteração adicional / diferença do principal */
+.section-7 .btn-vermelho {  
+    display:flex;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 30px;
+}
+
+/* O mesmo se repete aqui */
+.section-7 .challenge {
+    margin-bottom: 200px;
+}
+
+
+.section-7 .container .gradient-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
