@@ -89,3 +89,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+//logica não disponível
+const btnNaoDisponivel = document.querySelectorAll(".nao-disponivel");
+
+btnNaoDisponivel.forEach((btn) => {
+
+    btn.addEventListener("click", () => {
+
+        alert("Função ainda não disponível")
+
+    });
+
+});
