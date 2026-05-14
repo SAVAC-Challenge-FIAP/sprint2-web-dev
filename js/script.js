@@ -35,3 +35,16 @@ setInterval(() => {
     slide.src = imagens[indice];
 
 }, 3000);
+
+//lógica de seleção de cards
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+
+    card.addEventListener("click", () => {
+
+        card.classList.toggle("ativo");
+
+    });
+
+});
