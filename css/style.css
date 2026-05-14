@@ -100,20 +100,6 @@ a:hover {
     color: var(--color-second);
 }
 
-.btn-menu {
-    background-color: #7F1D1D;
-    padding: 13px 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-menu:hover {
-    background-color: #EA580C;
-    transform: translateY(-2px);
-}
-
 .btn-vermelho {
     background-color: var(--color-primary);
     padding: 13px 20px;
