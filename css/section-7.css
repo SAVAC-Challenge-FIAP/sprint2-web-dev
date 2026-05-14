@@ -45,4 +45,41 @@
     z-index: -1;
 }
 
+.newsletter {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter-title {
+    color: white;
+    font-size: 18px;
+}
+
+.newsletter-box {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-box input {
+    padding: 14px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-box button {
+    padding: 14px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#mensagemNewsletter {
+    color: #FFD000;
+    font-size: 14px;
+}
+
 

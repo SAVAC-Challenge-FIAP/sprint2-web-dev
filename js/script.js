@@ -64,3 +64,28 @@ btnDownload.addEventListener("click", () => {
 
     }
 );
+
+//newsletter
+document.addEventListener("DOMContentLoaded", () => {
+
+    const newsletterBtn = document.getElementById("newsletterBtn");
+
+    newsletterBtn.addEventListener("click", () => {
+
+        const email = document.getElementById("newsletterEmail").value;
+
+        const mensagem = document.getElementById("mensagemNewsletter");
+
+        if(email === "") {
+
+            alert("Digite um e-mail.");
+
+            return;
+
+        }
+
+        mensagem.innerText = "E-mail cadastrado com sucesso!";
+
+    });
+
+});
