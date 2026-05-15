@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu-interativo.css">
+    <link rel="stylesheet" href="./css/pop-up.css">
     <link rel="stylesheet" href="./css/section-1.css">
     <link rel="stylesheet" href="./css/section-2.css">
     <link rel="stylesheet" href="./css/section-3.css">
@@ -32,6 +33,45 @@
 </head>
 
 <body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div id="welcomeModal" class="pop-up">
+
+        <button class="fechar" id="fecharModal">×</button>
+        <div id="borda1"></div>
+        <div id="borda2"></div>
+        <div id="borda3"></div>
+        <div id="borda4"></div>
+
+        <img src="./imgs/favicon.png" alt="Logo Synesthesia">
+
+        <p class="title-flag">
+            <span>// BEM-VINDO</span>
+        </p>
+
+        <div class="centralizado">
+            <h1>
+            Entre no <span id="amarelo">campo visual.</span>
+            </h1>
+        </div>
+        
+
+        <p class="descricao">
+            Synesthesia é onde música e imagem colidem.
+            Explore coleções que transformam som em cor,
+            ritmo em forma, frequência em arte.
+        </p>
+
+        <button class="btn-vermelho" id="explorar">
+            EXPLORAR AGORA 
+            <i class="bx bx-arrow-right-stroke"></i>
+        </button>
+
+
+        <p class="fechar" id="maisTarde">Talvez mais tarde</p>
+
+    </div>
 
     <header class="cabecalho">
         <div class="navbar">

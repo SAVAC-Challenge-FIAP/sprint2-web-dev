@@ -1,0 +1,158 @@
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(8px);
+    z-index: 9998;
+}
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 540px;
+    max-height: 510px;
+    padding: 52px 48px 44px;
+    background-color: var(--color-black);
+    color: (--color-white); 
+    border: 1px solid #F5EEDE1F;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+#borda1 {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-width: 2px 2px 0px 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border-style: solid;
+    border-color: var(--color-second);
+}
+
+#borda2 {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    border-width: 0px 0px 2px 2px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border-style: solid;
+    border-color: var(--color-second);
+}
+
+#borda3 {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-width: 0px 2px 2px 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border-style: solid;
+    border-color: var(--color-second);
+}
+
+#borda4 {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-width: 2px 0px 0px 2px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border-style: solid;
+    border-color: var(--color-second);
+}
+
+.pop-up img{
+    width: 60px;
+    margin-left: 5px;
+}
+
+.pop-up .title-flag {
+    letter-spacing: 1.98px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    
+}
+
+.pop-up h1{
+    color: var(--color-white);
+    font-family: var(--font-syne);
+    font-size: 32px;
+    max-width: 240px;
+    font-weight: 400;
+    line-height: 36.8px;
+}
+
+.pop-up span{
+    color: var(--color-second);
+}   
+
+.descricao{
+    margin-top: 18px;
+    margin-bottom: 32px;
+    line-height: 1.8;
+    font-family: var(--font-mono);
+    max-width: 344px;
+    opacity: 0.5;
+    font-size: 13px;
+    line-height: 22.75px;
+    letter-spacing: 0%;   
+}
+
+.pop-up .btn-vermelho {
+    padding: 16px 28px;
+    margin-bottom: 20px;
+}
+
+.fechar{
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: var(--font-mono);
+    color: var(--color-white);
+    opacity: 0.5;
+    font-size: 30px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#fecharModal {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+#maisTarde{
+    font-size: 14px;
+    opacity: 0.2;
+}
+
+.fechar:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+#maisTarde:hover{
+    opacity: 0.5;
+}
