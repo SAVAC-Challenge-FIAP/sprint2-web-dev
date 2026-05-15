@@ -1,3 +1,21 @@
+const modal = document.getElementById("welcomeModal");
+const overlay = document.getElementById("overlay");
+
+const fecharModal = document.getElementById("fecharModal");
+const maisTarde = document.getElementById("maisTarde");
+const explorar = document.getElementById("explorar");
+
+function fecharTudo(){
+
+    modal.style.display = "none";
+    overlay.style.display = "none";
+
+}
+
+fecharModal.addEventListener("click", fecharTudo);
+maisTarde.addEventListener("click", fecharTudo);
+explorar.addEventListener("click", fecharTudo);
+
 const btnMenu = document.getElementById("btn-menu");
 const menu = document.getElementById("menuLateral");
 const fechar = document.getElementById("fecharMenu");

@@ -101,16 +101,30 @@ a:hover {
 }
 
 .btn-vermelho {
-    background-color: var(--color-primary);
+    background-color: #7F1D1D;
+    color: var(--color-white);
+    font-family: var(--font-mono);
     padding: 13px 20px;
+    border: none;
     border-radius: 4px;
     font-size: 14px;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    i {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
 }
 
 .btn-vermelho:hover {
     background-color: #ae0d0d;
+    transform: translateY(-2px);
 }
 
 .btn-amarelo {
