@@ -17,10 +17,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 540px;
-    max-height: 510px;
+    overflow: hidden;
+    max-height: 90vh;
     padding: 52px 48px 44px;
     background-color: var(--color-black);
-    color: var(--color-white); 
+    color: var(--color-white);
     border: 1px solid #F5EEDE1F;
     backdrop-filter: blur(20px);
     text-align: center;

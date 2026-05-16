@@ -88,28 +88,41 @@ btnDownload.addEventListener("click", () => {
     }
 );
 
-//newsletter
-document.addEventListener("DOMContentLoaded", () => {
+//newsletter — validação de nome e e-mail no popup
+const newsletterForm = document.getElementById("newsletterForm");
+const declineNewsletter = document.getElementById("declineNewsletter");
 
-    const newsletterBtn = document.getElementById("newsletterBtn");
+newsletterForm.addEventListener("submit", (e) => {
 
-    newsletterBtn.addEventListener("click", () => {
+    e.preventDefault();
 
-        const email = document.getElementById("newsletterEmail").value;
+    const nome = document.getElementById("newsletterNome").value;
+    const email = document.getElementById("newsletterEmail").value;
+    const mensagem = document.getElementById("mensagemNewsletter");
 
-        const mensagem = document.getElementById("mensagemNewsletter");
+    mensagem.classList.remove("sucesso", "erro");
 
-        if(email === "") {
+    if (nome.trim() === "") {
+        mensagem.innerText = "Nome inválido.";
+        mensagem.classList.add("erro");
+        return;
+    }
 
-            alert("Digite um e-mail.");
+    if (!email.includes("@") || !email.includes(".")) {
+        mensagem.innerText = "E-mail inválido.";
+        mensagem.classList.add("erro");
+        return;
+    }
 
-            return;
+    mensagem.innerText = "Cadastro realizado com sucesso!";
+    mensagem.classList.add("sucesso");
+    newsletterForm.reset();
 
-        }
+});
 
-        mensagem.innerText = "E-mail cadastrado com sucesso!";
+declineNewsletter.addEventListener("click", () => {
 
-    });
+    newsletter.classList.remove("ativo");
 
 });
 
