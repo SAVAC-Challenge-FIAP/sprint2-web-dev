@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu-interativo.css">
+    <link rel="stylesheet" href="./css/newsletter.css">
     <link rel="stylesheet" href="./css/pop-up.css">
     <link rel="stylesheet" href="./css/section-1.css">
     <link rel="stylesheet" href="./css/section-2.css">
@@ -36,13 +37,13 @@
 
     <div class="overlay" id="overlay"></div>
 
-    <div id="welcomeModal" class="pop-up">
+    <div id="welcomeModal" class="pop-up ativo">
 
         <button class="fechar" id="fecharModal">×</button>
-        <div id="borda1"></div>
-        <div id="borda2"></div>
-        <div id="borda3"></div>
-        <div id="borda4"></div>
+        <div class="borda bd1"></div>
+        <div class="borda bd2"></div>
+        <div class="borda bd3"></div>
+        <div class="borda bd4"></div>
 
         <img src="./imgs/favicon.png" alt="Logo Synesthesia">
 
@@ -98,12 +99,87 @@
                 </div>
     
                 <ul>
-                    <li><a href="#">Funcionalidade 1</a></li>
-                    <li><a href="#">Funcionalidade 2</a></li>
-                    <li><a href="#">Funcionalidade 3</a></li>
-                    <li><a href="#">Funcionalidade 4</a></li>
-                    <li><a href="#">Funcionalidade 5</a></li>
+                    <li><button id="btn-newsletter">Newsletter</button></li>
+                    <li><a href="https://savac-challenge-fiap.github.io/sprint2-front-end/index.html" target="_blank" noopener noreferrer>Preview da App</a></li>
                 </ul>
+
+                <div id="newsletter" class="pop-up">
+
+                    <button class="fechar" id="fecharNewsletter">✕</button>
+                    <div class="borda bd1"></div>
+                    <div class="borda bd2"></div>
+                    <div class="borda bd3"></div>
+                    <div class="borda bd4"></div>
+
+
+                    <p class="title-flag">
+                        <span>// NEWSLETTER</span>
+                    </p>
+
+                    <h1>
+                        Sintonize com o<br>
+                        <span>próximo drop.</span>
+                    </h1>
+
+                    <p class="descricao">
+                        Receba em primeira mão novos artistas, coleções
+                        exclusivas e lançamentos antes de todos.
+                    </p>
+
+                    <div class="cardszinhos">
+                        <div class="cardzinho">
+                            <p class="amarelo">12k+</p>
+                            <p class="subtitle-card">ASSINANTES</p>
+                        </div>
+                        <div class="cardzinho">
+                            <p class="amarelo">2×</p>
+                            <p class="subtitle-card">POR MÊS</p>
+                        </div>
+                        <div class="cardzinho">
+                            <p class="amarelo">0</p>
+                            <p class="subtitle-card">SPAM</p>
+                        </div>
+                    </div>
+
+                    <hr class="newsletter-divider">
+
+                    <form id="newsletterForm" novalidate>
+
+                        <div class="field">
+                        <label for="newsletterNome">Nome</label>
+                        <input type="text" id="newsletterNome" placeholder="Seu primeiro nome">
+                        </div>
+
+                        <div class="field">
+                        <label for="newsletterEmail">E-mail</label>
+                        <input type="email" id="newsletterEmail" placeholder="seu@email.com">
+                        </div>
+
+                        <div class="checkbox">
+                        <input type="checkbox" id="check">
+
+                        <label for="check">
+                            Concordo em receber comunicações da Synesthesia e aceito a
+                            <a href="#">Política de Privacidade.</a>
+                        </label>
+                        </div>
+
+                        <p id="mensagemNewsletter" class="newsletter-msg"></p>
+
+                        <div class="popup-footer">
+
+                        <button type="submit" class="submit" id="newsletterBtn">
+                            INSCREVER-ME
+                            <img class="submit-icon" src="./imgs/icons/arrow-newsletter.svg" alt="">
+                        </button>
+
+                        <button type="button" class="decline" id="declineNewsletter">
+                            Não, obrigado
+                        </button>
+
+                        </div>
+                    </form>
+                </div>
 
             </div>
         </div>
@@ -443,30 +519,6 @@
                     
                 </div>
                 <img src="./imgs/section-3/gradient-blur.svg" alt="backgound de degradê" class="gradient-blur">
-
-                <div class="newsletter">
-
-                    <p class="newsletter-title">
-                        Receba novidades do Synesthesia
-                    </p>
-
-                    <div class="newsletter-box">
-
-                        <input 
-                            type="email"
-                            id="newsletterEmail"
-                            placeholder="Digite seu e-mail"
-                        >
-
-                        <button class="btn-amarelo" id="newsletterBtn">
-                            INSCREVER
-                        </button>
-
-                    </div>
-
-                    <p id="mensagemNewsletter"></p>
-
-                </div>
 
             </div>
         </section>

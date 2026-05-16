@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Figma__get_design_context",
+      "mcp__claude_ai_Figma__get_screenshot",
+      "Bash(curl -sS -o \"c:/Users/savio/OneDrive/Área de Trabalho/FIAP/1semestre/WebDevelopment/repo/sprint2-web-dev/imgs/icons/arrow-newsletter.svg\" \"https://www.figma.com/api/mcp/asset/c712b6ec-d193-4749-9faf-a46ea9652daa\")"
+    ]
+  }
+}
