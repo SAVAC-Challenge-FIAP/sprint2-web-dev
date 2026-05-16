@@ -72,19 +72,6 @@ setInterval(() => {
 
 }, 3000);
 
-//lógica de seleção de cards
-const cards = document.querySelectorAll(".card");
-
-cards.forEach((card) => {
-
-    card.addEventListener("click", () => {
-
-        card.classList.toggle("ativo");
-
-    });
-
-});
-
 //lógica de download
 const btnDownload = document.getElementById("btn-download");
 
