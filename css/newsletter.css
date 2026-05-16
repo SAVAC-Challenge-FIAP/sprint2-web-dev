@@ -1,0 +1,78 @@
+#newsletter {
+    align-items: flex-start;
+    text-align: start;
+    width: 560px;
+    height: 636px;
+}
+
+#newsletter .title-flag {
+    margin-bottom: 12px;
+
+}
+#newsletter p {
+    width: 367px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+
+#fecharNewsletter {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+#fecharNewsLetter:hover{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.cardzinhos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 57px;
+    gap: 28px;
+}
+
+.cardzinho {
+    max-width: 70px;
+    max-height: 28px;
+}
+
+.cardzinho .amarelo {
+    font-family: var(--font-syne);
+    color: var(--color-second);
+    font-size: 22px;
+    line-height: 22px;
+}
+
+#newsletter .subtitle-card{
+    color: var(--color-white);
+    opacity: 0.3;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    margin-top: 0;
+}
+
+#btn-newsletter{
+    all: unset;
+    text-decoration: none;
+    font-family: var(--font-syne);
+    color: var(--color-white);
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 2;
+    transition: 0.3s;
+}
+
+#btn-newsletter:hover{
+    color: #ffae00;
+    padding-left: 10px;
+}

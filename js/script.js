@@ -1,6 +1,24 @@
 const modal = document.getElementById("welcomeModal");
 const overlay = document.getElementById("overlay");
 
+const newsletter = document.getElementById("newsletter");
+const btnNewsletter = document.getElementById("btn-newsletter");
+const fecharNewsletter = document.getElementById("fecharNewsletter");
+
+
+btnNewsletter.addEventListener("click", function(){
+
+    newsletter.classList.add("ativo");
+
+});
+
+fecharNewsletter.addEventListener("click", function(){
+
+    newsletter.classList.remove("ativo");
+
+});
+
+
 const fecharModal = document.getElementById("fecharModal");
 const maisTarde = document.getElementById("maisTarde");
 const explorar = document.getElementById("explorar");
