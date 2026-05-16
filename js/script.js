@@ -34,8 +34,8 @@ fechar.addEventListener("click", function(){
 
 //slideshow
 const imagens = [
-    "./imgs/section-1/Phone mockup.svg",
-    "./imgs/section-1/Phone2.svg"
+    "./imgs/section-1/imgnocolor1.png",
+    "./imgs/section-1/imgcolor2.png"
 ];
 
 let indice = 0;
